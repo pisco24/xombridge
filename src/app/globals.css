@@ -1,0 +1,215 @@
+:root {
+  /* --background: linear-gradient(180deg, rgba(70,111,79,1) 0%, rgba(18,62,85,1) 100%); */
+  --background: linear-gradient(0deg, #0f374e 0%, #0f374e 100%);
+  --foreground: #fff;
+  --svgFill: #fff;
+  --common: #2B2538;
+  --connect_color: #C6806D;
+  --connect_bg: #2b2538;
+  --black: #000;
+  --box_bg: #211D28;
+  --text: #8A898E;
+  --text_: #BCBAC0;
+  --light_dark: #4C4953;
+  --light_dark_bg: rgba(76, 73, 83, 0.5);
+}
+
+/* Light Mode */
+[data-theme="light"] {
+  /* --background: linear-gradient(180deg, rgba(70,111,79,1) 0%, rgba(18,62,85,1) 100%); */
+  --background: linear-gradient(0deg, #5178c7 0%, #b2ddf6 100%);
+  --foreground: #000;
+  --svgFill: none;
+  --common: #a2d0d9fa;
+  --connect_color: #ff5722;
+  --connect_bg: #f5f5f5;
+  --black: #fff;
+  --box_bg: #d0e2ea;
+  --text: #333;
+  --text_: #666;
+  --light_dark: #ccc;
+  --light_dark_bg: rgba(200, 200, 200, 0.5);
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-roman.var.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Inter', monospace !important;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+
+}
+/* ul {
+  color: var(--foreground);
+  background: var(--background);
+
+} */
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.common_btn {
+  color: var(--black);
+  background: var(--foreground);
+  font-size: 15px;
+  width: 100%;
+  border-radius: 50px;
+  height: 46px;
+  text-transform: capitalize;
+  gap: 4px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.common_btn:disabled {
+  color: var(--text);
+  cursor: not-allowed !important;
+}
+
+.light_dark_text {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.foreground_text {
+  color: var(--foreground);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.foreground_text_12 {
+  color: var(--foreground);
+  font-size: 12px;
+}
+
+.text_ {
+  color: var(--text_);
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.common_btn:hover {
+  background: var(--foreground);
+}
+
+.btn {
+  color: var(--foreground);
+  background: var(--common);
+  font-size: 14px;
+  /* width: 100%; */
+  border-radius: 50px;
+  height: 36px;
+  text-transform: capitalize;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--common);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.bin1 {
+  margin-top: 5px;
+  background: var(--box_bg);
+  width: 100%;
+  border: 2px solid transparent !important;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.bin1 input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.bin1 input[type=number]::-webkit-outer-spin-button,
+.bin1 input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bin1:hover {
+  border: 2px solid transparent !important;
+}
+
+.bin1:focus {
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 5px !important;
+}
+
+.bin1 input,
+.bin1 textarea {
+  /* padding: 10px 15px; */
+  font-size: 30px;
+  color: var(--text_) !important;
+  /* font-family: "Jost", sans-serif; Replace with actual font if different */
+}
+
+.bin1 input::placeholder,
+.bin1 textarea::placeholder {
+  color: var(--foreground) !important;
+}
+
+.xombol-logo {
+  transition: 0.5s all ease-in-out;
+  width: 50px;
+  height: 100%;
+}
+
+.xombol-logo:hover {
+  transform: rotate(360deg);
+}
+
+.xombol-banner {
+  width: auto;
+  height: 100%;
+}
+
+.menu_btn_wrapper button {
+  padding: 8px;
+  /* background: var(--box_bg) !important; */
+  color: var(--foreground) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu_btn_wrapper a {
+  text-decoration: none;
+}
