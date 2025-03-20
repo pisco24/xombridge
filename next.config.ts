@@ -2,12 +2,11 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
-  /* config options here */
-  output: "export",
+  /* other config options here */
+  // output: "export",  // Removed static export to enable SSR/hybrid mode
 };
 
 export default nextConfig;
+
