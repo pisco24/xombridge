@@ -1,6 +1,6 @@
 :root {
   /* --background: linear-gradient(180deg, rgba(70,111,79,1) 0%, rgba(18,62,85,1) 100%); */
-  --background: linear-gradient(0deg, #0f374e 0%, #0f374e 100%);
+  --background: linear-gradient(to bottom right, #081221, #0EA5E9);
   --foreground: #fff;
   --svgFill: #fff;
   --common: #2B2538;
@@ -49,14 +49,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
-
 }
+
 /* ul {
   color: var(--foreground);
   background: var(--background);
-
 } */
-
 
 * {
   box-sizing: border-box;
