@@ -27,6 +27,7 @@ const Header = () => {
       i18n.changeLanguage(currentLang);
     }
   }, [currentLang, i18n]);
+
   useEffect(() => {
     const storedLang = localStorage.getItem("lang");
     if (storedLang) {
@@ -69,51 +70,6 @@ const Header = () => {
               height: "auto",
             }}
           />
-        </Box>
-
-        {/* Center Section: Social Tab */}
-        <Box
-          sx={{
-            display: "flex",
-            gap: "16px",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          {/* X Icon */}
-          <a
-            href="https://x.com/khombole_gare"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Follow us on X"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
-            </svg>
-          </a>
-          {/* Telegram Icon */}
-          <a
-            href="https://t.me/+E_IoMnClUlE5ZmEx"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Join us on Telegram"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              width="24"
-              height="24"
-              viewBox="0 0 240 240"
-            >
-              <path d="M120 0C53.73 0 0 53.73 0 120s53.73 120 120 120 120-53.73 120-120S186.27 0 120 0zm58.08 83.93L158.4 176.52c-1.49 6.61-5.38 8.25-10.88 5.15l-30.08-22.2-14.5 14c-1.6 1.6-2.93 2.93-6 2.93l2.14-30.33L94.91 114.3c-2.4-2.14.52-3.33 3.74-1.19l55.33 50.1 15.13-13.95c6.87-6.37 2.64-9.93-4.12-3.87l-53.87 43.92L85.12 126.9l93.96-73.97c4.34-3.4 8.27-1.62 6.08 2.9z" />
-            </svg>
-          </a>
         </Box>
 
         {/* Right Section: Wallet Button */}
