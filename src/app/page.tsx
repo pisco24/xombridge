@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 "use client";
 import { Box, Container } from "@mui/material";
 import { ToastContainer } from "react-toastify";
